@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Java Script</title>
+</head>
+<body>
+    <h2>My First Web Page</h2>
+    <p>My First Web Paragraph</p>
+    <p id ="demo"></p>
+    <!--<script>
+    const nim = 17;
+    console.log(nim); //17
+    </script>-->
+
+    <!--var + const-->
+        <!--<Script>
+     var nim1 = 200;
+     const nim2 = 25;
+     console.log(nim1 + nim2); //225
+    </Script>-->
+
+    <!--Membuat aplikasi ganjil genap-->
+    <input type="number" id="numberInput" placeholder="Masukkan bilangan">
+    <button onclick="checkNumber()">Periksa</button>
+
+    <p id="result"></p>
+    <script>
+         function checkNumber() {
+            var number = document.getElementById("numberInput").value;
+            var resultText;
+            
+            if (number % 2 === 0) {
+                resultText = number + " adalah bilangan genap.";
+            } else {
+                resultText = number + " adalah bilangan ganjil.";
+            }
+            
+            document.getElementById("result").innerText = resultText;
+        }
+    </script>  
+</body>
+    </script>
+</body>
+</html>
